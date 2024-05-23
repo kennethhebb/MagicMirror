@@ -20,7 +20,7 @@ Module.register("compliments", {
 			"Fill your bowl to the brim, and it will spill.",
 			"Keep sharpening your knife, and it will blunt.",
 			"Chase after money and security, and your heart will never unclench.",
-			"Care about people's approval, and you wil be their prisoner.",
+			"Care about people's approval, and you will be their prisoner.",
 			"Do your work and then step back.",
 			"Success is as dangerous as failure.",
 			"When you stand with your feet on the ground, you will keep your balance.",
@@ -112,15 +112,6 @@ Module.register("compliments", {
 			"","","",
 			"","","",
 			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
-			"","","",
 
 
 
@@ -130,7 +121,7 @@ Module.register("compliments", {
 			"Kalimera!", "Bon matin!", "Bore da!", "Buenas dias!"
 		],
 			afternoon: ["I have loved the stars too fondly to be fearful of the night.",
-			 "", ""],
+			 "I'm afraid I can't allow you do that, Dave.", "Everybody's dead, Dave.", "Everybody's. Dead. Dave.", "Daisy, Daisy, give me your answer, do."],
 			evening: ["", "", ""],
 			"....-01-01": ["Happy new year!"],
 			"....-11-02": ["Happy Birthday, Julie!"],
