@@ -100,7 +100,7 @@ let config = {
 				showWindDirectionAsArrow: false,
 				showSun: true,           // Show sunrise/sunset
 				showFeelsLike: false,    // Disable feels like
-				roundTemp: true,
+				roundTemp: false,
 				units: "metric",
 				showIndoorTemperature: false,
 				showIndoorHumidity: false,
@@ -113,19 +113,19 @@ let config = {
 			header: "Inside the Woodland Retreat",
 			config: {
 				weatherProvider: "localweather",
-        type: "current",
-        location: "interior",
-        apiBase: "http://192.168.4.39:8080",
-        endpoint: "/api/currentConditions",
-        showHumidity: true,
-        showWindSpeed: false,    // Disable wind for interior
-        showWindDirection: false,
-        showSun: false,          // Disable sun for interior
-        showFeelsLike: false,
-        roundTemp: true,
-        units: "metric",
-        showIndoorTemperature: false,
-        showIndoorHumidity: false
+        	type: "current",
+        	location: "interior",
+        	apiBase: "http://192.168.4.39:8080",
+        	endpoint: "/api/currentConditions",
+        	showHumidity: true,
+        	showWindSpeed: false,    // Disable wind for interior
+        	showWindDirection: false,
+        	showSun: false,          // Disable sun for interior
+        	showFeelsLike: false,
+        	roundTemp: false,
+        	units: "metric",
+        	showIndoorTemperature: false,
+        	showIndoorHumidity: false
 			}
 		},
 		// {
