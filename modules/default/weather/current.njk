@@ -1,20 +1,22 @@
 {% if current %}
     {% if not config.onlyTemp %}
         <div class="normal medium">
-            <span class="wi wi-strong-wind dimmed"></span>
-            <span>
-                {{ current.windSpeed | unit("wind") | round }}
-                {% if config.showWindDirection %}
-                    <sup>
-                        {% if config.showWindDirectionAsArrow %}
-                            <i class="fas fa-long-arrow-alt-down" style="transform:rotate({{ current.windFromDirection }}deg);"></i>
-                        {% else %}
-                            {{ current.cardinalWindDirection() | translate }}
-                        {% endif %}
-                        &nbsp;
-                    </sup>
-                {% endif %}
-            </span>
+            {% if config.location === "exterior" %}
+                <span class="wi wi-strong-wind dimmed"></span>
+                <span>
+                    {{ current.windSpeed | unit("wind") | round }}
+                    {% if config.showWindDirection %}
+                        <sup>
+                            {% if config.showWindDirectionAsArrow %}
+                                <i class="fas fa-long-arrow-alt-down" style="transform:rotate({{ current.windFromDirection }}deg);"></i>
+                            {% else %}
+                                {{ current.cardinalWindDirection() | translate }}
+                            {% endif %}
+                            &nbsp;
+                        </sup>
+                    {% endif %}
+                </span>
+            {% endif %} 
             {% if config.showHumidity and current.humidity %}
                 <span>{{ current.humidity | decimalSymbol }}</span><sup>&nbsp;<i class="wi wi-humidity humidity-icon"></i></sup>
             {% endif %}
@@ -57,6 +59,12 @@
                 <span class="bright">
                     {{ indoor.humidity | roundValue | unit("humidity") | decimalSymbol }}
                 </span>
+            </div>
+        {% endif %}
+        {% if current.pressure %}
+            <div>
+                <span class="dimmed wi wi-barometer"></span>
+                <span>{{ current.pressure | decimalSymbol }}</span>
             </div>
         {% endif %}
     </div>

@@ -45,7 +45,8 @@ Module.register("weather", {
 		onlyTemp: false,
 		colored: false,
 		absoluteDates: false,
-		hourlyForecastIncrements: 1
+		hourlyForecastIncrements: 1,
+		showPressure: false
 	},
 
 	// Module properties.

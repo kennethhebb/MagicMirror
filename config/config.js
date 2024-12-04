@@ -90,7 +90,21 @@ let config = {
 			header: "Live at the Woodland Retreat",
 			config: {
 				weatherProvider: "localweather",
+				type: "current",
 				location: "exterior",
+				apiBase: "http://192.168.4.39:8080",
+				endpoint: "/api/currentConditions",
+				showHumidity: true,
+				showWindSpeed: true,
+				showWindDirection: true,
+				showWindDirectionAsArrow: false,
+				showSun: true,           // Show sunrise/sunset
+				showFeelsLike: false,    // Disable feels like
+				roundTemp: true,
+				units: "metric",
+				showIndoorTemperature: false,
+				showIndoorHumidity: false,
+				showPressure: true
 			}
 		},
 		{
@@ -99,7 +113,19 @@ let config = {
 			header: "Inside the Woodland Retreat",
 			config: {
 				weatherProvider: "localweather",
-				location: "interior",
+        type: "current",
+        location: "interior",
+        apiBase: "http://192.168.4.39:8080",
+        endpoint: "/api/currentConditions",
+        showHumidity: true,
+        showWindSpeed: false,    // Disable wind for interior
+        showWindDirection: false,
+        showSun: false,          // Disable sun for interior
+        showFeelsLike: false,
+        roundTemp: true,
+        units: "metric",
+        showIndoorTemperature: false,
+        showIndoorHumidity: false
 			}
 		},
 		// {

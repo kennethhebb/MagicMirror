@@ -34,6 +34,7 @@ class WeatherObject {
 		this.precipitationUnits = null;
 		this.precipitationProbability = null;
 		this.feelsLikeTemp = null;
+		this.pressure = null;
 	}
 
 	cardinalWindDirection() {
