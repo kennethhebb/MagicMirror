@@ -87,7 +87,7 @@ let config = {
 		{
 			module: "weather",
 			position: "top_right",
-			header: "Outside Conditions",
+			header: "Outdoor Conditions",
 			config: {
 				weatherProvider: "localweather",
 				type: "current",
