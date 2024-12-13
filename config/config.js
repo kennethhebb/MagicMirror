@@ -87,7 +87,7 @@ let config = {
 		{
 			module: "weather",
 			position: "top_right",
-			header: "Live at the Woodland Retreat",
+			header: "Outside Conditions",
 			config: {
 				weatherProvider: "localweather",
 				type: "current",
@@ -110,7 +110,7 @@ let config = {
 		{
 			module: "weather",
 			position: "top_right",
-			header: "Inside the Woodland Retreat",
+			header: "Indoor Conditions",
 			config: {
 				weatherProvider: "localweather",
         	type: "current",
